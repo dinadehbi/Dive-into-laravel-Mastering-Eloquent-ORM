@@ -1,0 +1,27 @@
+@startuml FonctionnalitésDiagram
+
+left to right direction
+actor "Auteur" as fc
+actor "Admin" as admin
+actor "Visiteur" as visiteur
+rectangle "Fonctionnalités" {
+  usecase "CRUD articles" as UC1
+ 
+ 
+  usecase "Gestion des Catégories" as UC3 
+  usecase "CRUD auteurs" as UC4
+
+   usecase "Consulter articles" as UC2
+
+
+  
+
+}
+fc -- UC1
+visiteur -- UC2
+
+admin -- UC3
+admin -- UC4
+
+
+@enduml
