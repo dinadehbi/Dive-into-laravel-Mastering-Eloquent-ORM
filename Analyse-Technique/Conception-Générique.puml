@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+
+actor Administrateur as Admin
+
+rectangle Blog {
+    Admin -- (Ajouter Article)
+    Admin -- (Afficher Articles)
+    
+    
+    Admin -- (Ajouter Catégorie)
+    Admin -- (Afficher Catégories)
+}
+
+@enduml
